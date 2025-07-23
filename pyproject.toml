@@ -1,0 +1,43 @@
+[project]
+name = "python-prep"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "bobergsatoko",email = "boberg.satoko@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)",
+    "fastapi (>=0.116.1,<0.117.0)",
+    "python-multipart (>=0.0.20,<0.0.21)",
+    "pypdf2 (>=3.0.1,<4.0.0)",
+    "pytest (>=8.4.1,<9.0.0)",
+    "fpdf (>=1.7.2,<2.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "respx (>=0.22.0,<0.23.0)",
+    "pytest-asyncio (>=1.1.0,<2.0.0)",
+    "openai (>=1.97.1,<2.0.0)",
+    "trulens (>=2.1.0,<3.0.0)",
+    "trulens-providers-openai (>=2.1.0,<3.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+msgspec = "^0.19.0"
+pytest = "^8.4.1"
+coverage = "^7.9.2"
+mypy = "^1.17.0"
+ruff = "^0.12.4"
+uvicorn = "^0.35.0"
+types-requests = "^2.32.4.20250611"
+ipykernel = "^6.30.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
